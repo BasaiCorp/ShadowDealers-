@@ -1,0 +1,275 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #0e0e0e;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #e63946;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+.hero p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+.about h2 {
+    font-size: 2.5rem;
+    color: #e63946;
+}
+
+/* Footer */
+footer {
+    background-color: #0e0e0e;
+    padding: 20px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+/* Form Section */
+.form-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #2b2b2b;
+}
+.form-section h2 {
+    font-size: 2rem;
+    color: #e63946;
+}
+.form-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    color: #f5f5f5;
+}
+.form-section button {
+    padding: 10px 20px;
+    background-color: #e63946;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-section button:hover {
+    background-color: #d62839;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img.banner {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust as needed */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #fff;
+    animation: fadeIn 2s ease-out 0.5s;
+}
+
+.get-started-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: bounceIn 1s ease-out;
+}
+
+.get-started-btn:hover {
+    background-color: #d62839;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color: #2b2b2b;
+}
+.about h2 {
+    font-size: 2.5rem;
+    color: #e63946;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px;
+    background-color: #2b2b2b;
+    color: #f5f5f5;
+}
+.portfolio h2 {
+    font-size: 2.5rem;
+    color: #e63946;
+    margin-bottom: 20px;
+}
+.portfolio ul {
+    list-style-type: none;
+    padding: 0;
+}
+.portfolio ul li {
+    margin-bottom: 15px;
+}
+.portfolio p {
+    font-size: 1.2rem;
+}
+
+/* Portfolio Selection Section */
+.portfolio-selection {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #2b2b2b;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 8px;
+    margin: 9px;
+    overflow: hidden;
+    width: 700px; /* Increased width to provide more space */
+    height: 135px; /* Increased height for better spacing */
+    box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+    padding: 4.5px; /* Adds space around the content */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-link h2 {
+    margin: 0;
+    padding: 0 15px;
+    font-size: 1.5rem;
+    flex: 1;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Ensures overflow is hidden */
+    text-overflow: ellipsis; /* Adds ellipsis (...) if text overflows */
+}
+
+.portfolio-img {
+    width: 90px; /* Increased size for better visibility */
+    height: 90px; /* Ensures the image is circular */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #f5f5f5; /* Optional: Adds a border around the image */
+    margin-right: 20px; /* Increased margin for better spacing */
+}
